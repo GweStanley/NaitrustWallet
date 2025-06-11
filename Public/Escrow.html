@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Escrow Services - NiaTrust</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .bg-orange { background-color: #ff7a00; }
+    .text-orange { color: #ff7a00; }
+    .btn-orange { background-color: #ff7a00; color: white; border: none; }
+    .btn-orange:hover { background-color: #e06400; }
+    .small-card { max-width: 600px; margin: 0 auto; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-orange">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">NiaTrust</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container my-5">
+    <h2 class="text-orange mb-4">Escrow Services</h2>
+
+    <!-- Description -->
+    <div class="mb-4 small-card">
+      <div class="card shadow">
+        <div class="card-header bg-orange text-white">What is Escrow?</div>
+        <div class="card-body">
+          <p>Escrow is a financial arrangement where a third party holds and regulates the payment of funds required for two parties involved in a transaction. It ensures security by keeping the funds in a secure account, which is only released when all the terms of an agreement are met.</p>
+          <p>For example, in a rental or online transaction, the buyer deposits funds into the escrow wallet. The funds remain safe until the buyer confirms receipt of goods or services, after which the escrow releases the funds to the seller.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Initial Transaction Toggle -->
+    <div class="text-center mb-4">
+      <button class="btn btn-orange" data-bs-toggle="collapse" data-bs-target="#escrowFormSection">Initiate Transaction</button>
+    </div>
+
+    <!-- Escrow Setup and Transaction Form -->
+    <div class="collapse small-card" id="escrowFormSection">
+      <form id="escrowForm" class="card shadow p-4">
+        <div class="mb-3">
+          <label for="escrowName" class="form-label">Escrow Name</label>
+          <input type="text" id="escrowName" class="form-control" placeholder="E.g., Rent Safety Wallet" required>
+        </div>
+        <div class="mb-3">
+          <label for="approver1" class="form-label">Partner 1</label>
+          <input type="text" id="approver1" class="form-control" placeholder="+237XXXXXXXXX" required>
+        </div>
+        <div class="mb-3">
+          <label for="approver2" class="form-label">Partner 2</label>
+          <input type="text" id="approver2" class="form-control" placeholder="+237YYYYYYYYY" required>
+        </div>
+        <div class="mb-3">
+          <label for="initialAmount" class="form-label">Initial Deposit Amount (Fcfa)</label>
+          <input type="number" id="initialAmount" class="form-control" min="1" step="0.01" required>
+        </div>
+        <div class="text-end">
+          <button type="submit" class="btn btn-orange">Start Transaction</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Escrow Balance -->
+    <div class="card mt-4 shadow small-card">
+      <div class="card-header bg-orange text-white d-flex justify-content-between align-items-center">
+        <span>Escrow Balance</span>
+        <button class="btn btn-sm btn-outline-light" id="btnEscrowTopup">Top Up</button>
+      </div>
+      <div class="card-body">
+        <strong>Current Balance:</strong> <span id="escrow-balance">0.00</span> Fcfa
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-orange text-light text-center py-3">
+    <small>&copy; 2025 NiaTrust. All rights reserved.</small>
+  </footer>
+
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./Escrow.js"></script>
+</body>
+</html>

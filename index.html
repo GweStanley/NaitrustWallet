@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NiaTrust Wallet</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet" />
+  <link href="./styles.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-orange">
+    <div class="container-fluid">
+      <img class="logo" src="./media/Niatrust.png" alt="Niatrust logo">
+      <a class="navbar-brand" href="#">Nia<span id="i">T</span>rust Wallet</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="./Public/Auth.html">Sign In</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Public/About.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Public/Help.html">Help</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Public/Term&Privacy.html">Terms</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Public/Settings.html">Settings</a></li>
+           <li class="nav-item"><a class="nav-link" href="./Public/Escrow.html">Escrow Services</a></li>
+           <li class="nav-item"><a class="nav-link" href="./Public/ValidateTansaction.html">Validate a transaction</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BALANCE DISPLAY -->
+  <div class="container my-3 d-flex justify-content-end">
+    <div class="balance-box shadow-sm bg-white px-3 py-2 rounded">
+      Balance: <strong id="balance-display">000.00</strong> Fcfa
+    </div>
+  </div>
+
+    <div class="ticker-wrapper">
+    <div class="ticker">
+      <div class="ticker__item"> Welcome to Niatrust</div>
+      <div class="ticker__item">📢 Manage Your Group Funds: Don't miss our special offer!</div>
+      <div class="ticker__item">📢 Announcement: Escrow services now Available!</div>
+      <div class="ticker__item">📢 Announcement 4: Crypto Services coming soon.</div>
+    </div>
+  </div>
+  <!-- HERO SECTION -->
+  <section class="hero container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="./media/niatrust logo.gif" alt="Orange Money" class="img-fluid rounded shadow" />
+      </div>
+      <div class="col-md-6">
+        <h1>Welcome to <span id="heroD">NiaTrust</span></h1>
+        <p>Your trusted online group wallet. Deposit funds, make secure withdrawals, 
+          transfer internally, and manage your group finances anywhere, anytime.</p>
+        <h2>“ Joint Financial Management, with Trust and Purpose.”</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTION BUTTONS -->
+  <section class="container text-center mb-5">
+    <div class="d-flex justify-content-center gap-3">
+      <button id="btn-deposit" class="btn btn-success btn-lg">Deposit</button>
+      <button id="btn-withdraw" class="btn btn-danger btn-lg">Withdraw</button>
+      <button id="btn-transfer" class="btn btn-warning btn-lg">Transfer</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-orange text-light py-4">
+    <div class="container text-center">
+      <small>&copy; 2025 PathfinderLabs. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./index.js">
+    
+  </script>
+</body>
+</html>

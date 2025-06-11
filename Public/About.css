@@ -1,0 +1,23 @@
+.bg-orange {
+    background-color: #ff7a00;
+  }
+  
+  .text-orange {
+    color: #ff7a00;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .accordion-button {
+    background-color: #fff4e5;
+    color: #ff7a00;
+  }
+  
+  footer {
+    background-color: #ff7a00;
+    color: white;
+  }
+  

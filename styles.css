@@ -1,0 +1,100 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    padding-top:1px;
+  }
+  
+  .bg-orange {
+    background-color: #ff6600 !important;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-style:;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .balance-box {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  /* Hero Section Row: make sure image and text are side by side */
+  .hero .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Button Section: center and pad */
+  section .d-flex {
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  /* Hero Image Breathing Animation */
+.hero img {
+    animation: breathing 4s ease-in-out infinite;
+    transform-origin: center center;
+  }
+  
+  @keyframes breathing {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.03); }
+    100% { transform: scale(1); }
+  }
+  #i{
+    font-style: italic;
+  }
+  h2{
+    color: orange;
+  }
+  #heroD{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: orange;
+    font-weight: 500;
+  }
+  .logo{
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 50%;
+  }
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .ticker-wrapper {
+      background: #ff9800;
+      color: white;
+      overflow: hidden;
+      position: relative;
+      height: 50px;
+    }
+
+    .ticker {
+      display: flex;
+      width: max-content;
+      animation: scroll 50s linear infinite;
+    }
+
+    .ticker__item {
+      padding: 0 2rem;
+      white-space: nowrap;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    .ticker-wrapper:hover .ticker {
+  animation-play-state: paused;
+}

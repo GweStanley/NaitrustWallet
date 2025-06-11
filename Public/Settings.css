@@ -1,0 +1,24 @@
+.bg-orange {
+    background-color: #ff7a00;
+  }
+  
+  .text-orange {
+    color: #ff7a00;
+  }
+  
+  .btn-orange {
+    background-color: #ff7a00;
+    color: white;
+    border: none;
+  }
+  
+  .btn-orange:hover {
+    background-color: #e06400;
+    color: white;
+  }
+  .bg-orange { background-color: #ff7a00; }
+    .text-orange { color: #ff7a00; }
+    .btn-orange { background-color: #ff7a00; color: white; border: none; }
+    .btn-orange:hover { background-color: #e06400; }
+    .card.small-card { max-width: 600px; margin: 0 auto; }
+    .hidden { display: none; }
