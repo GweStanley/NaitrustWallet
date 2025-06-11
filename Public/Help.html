@@ -15,71 +15,103 @@
   </nav>
 
   <section class="container my-5">
-    <h1 class="text-orange">Help Center</h1>
-    <div class="accordion" id="faqAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faq1">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
-            How do I make a deposit?
-          </button>
-        </h2>
-        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">To deposit, simply click the "Deposit" button and follow the steps.</div>
-        </div>
-      </div>
+  <h1 class="text-orange mb-4">Help Center FAQ</h1>
+  <div class="accordion" id="faqAccordion">
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faq2">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
-            How are withdrawals authorized?
-          </button>
-        </h2>
-        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">Three authorized members must approve before any withdrawal can proceed.</div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faq3">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
-            Can I change the SMS recipients?
-          </button>
-        </h2>
-        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">Yes. Go to Settings > Notification Preferences to manage recipients.</div>
-        </div>
-      </div>
-
-       <div class="accordion-item">
-        <h2 class="accordion-header" id="faq2">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
-            What is Escrow?
-          </button>
-        </h2>
-        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">Escrow is a financial arrangement
-             where a third party holds and regulates the payment of funds required for two parties involved in a transaction.
-             It ensures security by keeping the funds in a secure account, 
-            which is only released when all the terms of an agreement are met.
-          For example, in a rental or online transaction, the buyer deposits funds
-           into the escrow wallet. The funds remain safe until the buyer confirms 
-           receipt of goods or services, after which the escrow releases the funds to the seller.
-</div>
-        </div>
-      </div>
-
-       <div class="accordion-item">
-        <h2 class="accordion-header" id="faq2">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
-            Problem of Funds Balances, Deposits, Withdrawal and Transfers?
-          </button>
-        </h2>
-        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body"><a href="./Support.html">Contact Support</a></div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq1">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+          How do I make a deposit?
+        </button>
+      </h2>
+      <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          To make a deposit, click the "Deposit" tab in your dashboard, enter the amount, and confirm. The system will provide instructions based on your account setup.
         </div>
       </div>
     </div>
-  </section>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+          How are withdrawals authorized?
+        </button>
+      </h2>
+      <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Every withdrawal must be confirmed by three designated group members. Until all authorizations are complete, the withdrawal remains pending.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+          Can I change the SMS recipients?
+        </button>
+      </h2>
+      <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Yes. Go to <strong>Settings &gt; Notification Preferences</strong> and update the phone numbers to receive alerts.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq4">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+          What is Escrow?
+        </button>
+      </h2>
+      <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Escrow is a secure holding account managed by NiaTrust for peer-to-peer transactions. Funds are only released when the agreed terms are fulfilled by both parties.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq5">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+          I have issues with balance, deposits, withdrawals, or transfers
+        </button>
+      </h2>
+      <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          For account-related issues, please <a href="./Support.html" class="text-orange fw-bold">contact our Support Team</a>.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq6">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
+          How do I reset my password?
+        </button>
+      </h2>
+      <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          On the Sign In screen, click “Forgot Password?”, enter your phone number, and follow the instructions to reset securely.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq7">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
+          How secure is my information?
+        </button>
+      </h2>
+      <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          NiaTrust uses encryption, multi-factor authorization, and strict privacy protocols to ensure your data and funds are safe.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<div>For more information, contact support <a href="./Support.html">Support</a></div>
 
   <footer class="bg-orange text-light py-3 text-center">
     <small>&copy; 2025 NiaTrust. All rights reserved.</small>
